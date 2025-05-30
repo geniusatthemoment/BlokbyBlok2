@@ -11,7 +11,9 @@ import SwiftUI
 struct scratch_appApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
         }
     }
 }
+//extenstion UTType 
+

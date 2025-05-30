@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		FF56C0EF2DC7F4C600ECC8B7 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF56C0EE2DC7F4C600ECC8B7 /* Launch Screen.storyboard */; };
+		FFC0CD1D2DC75AC4009E9E83 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FFC0CD1C2DC75AC4009E9E83 /* KeychainSwift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		FF649CC52DC1F53400AAAA0D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,15 +29,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FF649CB72DC1F53200AAAA0D /* scratch_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = scratch_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FF649CC42DC1F53400AAAA0D /* scratch_appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = scratch_appTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FF649CCE2DC1F53400AAAA0D /* scratch_appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = scratch_appUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF56C0EE2DC7F4C600ECC8B7 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		FF649CB72DC1F53200AAAA0D /* Blok by Blok.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Blok by Blok.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF649CC42DC1F53400AAAA0D /* Blok by BlokTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Blok by BlokTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF649CCE2DC1F53400AAAA0D /* Blok by BlokUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Blok by BlokUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		FF649CB92DC1F53200AAAA0D /* scratch_app */ = {
+		FF649CB92DC1F53200AAAA0D /* Blok by Blok */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = scratch_app;
+			path = "Blok by Blok";
 			sourceTree = "<group>";
 		};
 		FF649CC72DC1F53400AAAA0D /* scratch_appTests */ = {
@@ -52,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFC0CD1D2DC75AC4009E9E83 /* KeychainSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,7 +82,8 @@
 		FF649CAE2DC1F53200AAAA0D = {
 			isa = PBXGroup;
 			children = (
-				FF649CB92DC1F53200AAAA0D /* scratch_app */,
+				FF56C0EE2DC7F4C600ECC8B7 /* Launch Screen.storyboard */,
+				FF649CB92DC1F53200AAAA0D /* Blok by Blok */,
 				FF649CC72DC1F53400AAAA0D /* scratch_appTests */,
 				FF649CD12DC1F53400AAAA0D /* scratch_appUITests */,
 				FF649CB82DC1F53200AAAA0D /* Products */,
@@ -85,9 +93,9 @@
 		FF649CB82DC1F53200AAAA0D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FF649CB72DC1F53200AAAA0D /* scratch_app.app */,
-				FF649CC42DC1F53400AAAA0D /* scratch_appTests.xctest */,
-				FF649CCE2DC1F53400AAAA0D /* scratch_appUITests.xctest */,
+				FF649CB72DC1F53200AAAA0D /* Blok by Blok.app */,
+				FF649CC42DC1F53400AAAA0D /* Blok by BlokTests.xctest */,
+				FF649CCE2DC1F53400AAAA0D /* Blok by BlokUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,9 +103,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FF649CB62DC1F53200AAAA0D /* scratch_app */ = {
+		FF649CB62DC1F53200AAAA0D /* Blok by Blok */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FF649CD82DC1F53400AAAA0D /* Build configuration list for PBXNativeTarget "scratch_app" */;
+			buildConfigurationList = FF649CD82DC1F53400AAAA0D /* Build configuration list for PBXNativeTarget "Blok by Blok" */;
 			buildPhases = (
 				FF649CB32DC1F53200AAAA0D /* Sources */,
 				FF649CB42DC1F53200AAAA0D /* Frameworks */,
@@ -108,18 +116,19 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				FF649CB92DC1F53200AAAA0D /* scratch_app */,
+				FF649CB92DC1F53200AAAA0D /* Blok by Blok */,
 			);
-			name = scratch_app;
+			name = "Blok by Blok";
 			packageProductDependencies = (
+				FFC0CD1C2DC75AC4009E9E83 /* KeychainSwift */,
 			);
 			productName = scratch_app;
-			productReference = FF649CB72DC1F53200AAAA0D /* scratch_app.app */;
+			productReference = FF649CB72DC1F53200AAAA0D /* Blok by Blok.app */;
 			productType = "com.apple.product-type.application";
 		};
-		FF649CC32DC1F53400AAAA0D /* scratch_appTests */ = {
+		FF649CC32DC1F53400AAAA0D /* Blok by BlokTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FF649CDB2DC1F53400AAAA0D /* Build configuration list for PBXNativeTarget "scratch_appTests" */;
+			buildConfigurationList = FF649CDB2DC1F53400AAAA0D /* Build configuration list for PBXNativeTarget "Blok by BlokTests" */;
 			buildPhases = (
 				FF649CC02DC1F53400AAAA0D /* Sources */,
 				FF649CC12DC1F53400AAAA0D /* Frameworks */,
@@ -133,16 +142,16 @@
 			fileSystemSynchronizedGroups = (
 				FF649CC72DC1F53400AAAA0D /* scratch_appTests */,
 			);
-			name = scratch_appTests;
+			name = "Blok by BlokTests";
 			packageProductDependencies = (
 			);
 			productName = scratch_appTests;
-			productReference = FF649CC42DC1F53400AAAA0D /* scratch_appTests.xctest */;
+			productReference = FF649CC42DC1F53400AAAA0D /* Blok by BlokTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		FF649CCD2DC1F53400AAAA0D /* scratch_appUITests */ = {
+		FF649CCD2DC1F53400AAAA0D /* Blok by BlokUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FF649CDE2DC1F53400AAAA0D /* Build configuration list for PBXNativeTarget "scratch_appUITests" */;
+			buildConfigurationList = FF649CDE2DC1F53400AAAA0D /* Build configuration list for PBXNativeTarget "Blok by BlokUITests" */;
 			buildPhases = (
 				FF649CCA2DC1F53400AAAA0D /* Sources */,
 				FF649CCB2DC1F53400AAAA0D /* Frameworks */,
@@ -156,11 +165,11 @@
 			fileSystemSynchronizedGroups = (
 				FF649CD12DC1F53400AAAA0D /* scratch_appUITests */,
 			);
-			name = scratch_appUITests;
+			name = "Blok by BlokUITests";
 			packageProductDependencies = (
 			);
 			productName = scratch_appUITests;
-			productReference = FF649CCE2DC1F53400AAAA0D /* scratch_appUITests.xctest */;
+			productReference = FF649CCE2DC1F53400AAAA0D /* Blok by BlokUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -186,7 +195,7 @@
 					};
 				};
 			};
-			buildConfigurationList = FF649CB22DC1F53200AAAA0D /* Build configuration list for PBXProject "scratch_app" */;
+			buildConfigurationList = FF649CB22DC1F53200AAAA0D /* Build configuration list for PBXProject "Blok by Blok" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -195,14 +204,17 @@
 			);
 			mainGroup = FF649CAE2DC1F53200AAAA0D;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				FFC0CD1B2DC75A64009E9E83 /* XCRemoteSwiftPackageReference "keychain-swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = FF649CB82DC1F53200AAAA0D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FF649CB62DC1F53200AAAA0D /* scratch_app */,
-				FF649CC32DC1F53400AAAA0D /* scratch_appTests */,
-				FF649CCD2DC1F53400AAAA0D /* scratch_appUITests */,
+				FF649CB62DC1F53200AAAA0D /* Blok by Blok */,
+				FF649CC32DC1F53400AAAA0D /* Blok by BlokTests */,
+				FF649CCD2DC1F53400AAAA0D /* Blok by BlokUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -212,6 +224,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF56C0EF2DC7F4C600ECC8B7 /* Launch Screen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,12 +271,12 @@
 /* Begin PBXTargetDependency section */
 		FF649CC62DC1F53400AAAA0D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FF649CB62DC1F53200AAAA0D /* scratch_app */;
+			target = FF649CB62DC1F53200AAAA0D /* Blok by Blok */;
 			targetProxy = FF649CC52DC1F53400AAAA0D /* PBXContainerItemProxy */;
 		};
 		FF649CD02DC1F53400AAAA0D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FF649CB62DC1F53200AAAA0D /* scratch_app */;
+			target = FF649CB62DC1F53200AAAA0D /* Blok by Blok */;
 			targetProxy = FF649CCF2DC1F53400AAAA0D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -400,11 +413,12 @@
 				DEVELOPMENT_TEAM = 6KD3Y8864K;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "scratch-app-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -428,11 +442,12 @@
 				DEVELOPMENT_TEAM = 6KD3Y8864K;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "scratch-app-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -461,7 +476,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/scratch_app.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/scratch_app";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Blok by Blok.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Blok by Blok";
 			};
 			name = Debug;
 		};
@@ -480,7 +495,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/scratch_app.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/scratch_app";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Blok by Blok.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Blok by Blok";
 			};
 			name = Release;
 		};
@@ -521,7 +536,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FF649CB22DC1F53200AAAA0D /* Build configuration list for PBXProject "scratch_app" */ = {
+		FF649CB22DC1F53200AAAA0D /* Build configuration list for PBXProject "Blok by Blok" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FF649CD62DC1F53400AAAA0D /* Debug */,
@@ -530,7 +545,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FF649CD82DC1F53400AAAA0D /* Build configuration list for PBXNativeTarget "scratch_app" */ = {
+		FF649CD82DC1F53400AAAA0D /* Build configuration list for PBXNativeTarget "Blok by Blok" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FF649CD92DC1F53400AAAA0D /* Debug */,
@@ -539,7 +554,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FF649CDB2DC1F53400AAAA0D /* Build configuration list for PBXNativeTarget "scratch_appTests" */ = {
+		FF649CDB2DC1F53400AAAA0D /* Build configuration list for PBXNativeTarget "Blok by BlokTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FF649CDC2DC1F53400AAAA0D /* Debug */,
@@ -548,7 +563,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FF649CDE2DC1F53400AAAA0D /* Build configuration list for PBXNativeTarget "scratch_appUITests" */ = {
+		FF649CDE2DC1F53400AAAA0D /* Build configuration list for PBXNativeTarget "Blok by BlokUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FF649CDF2DC1F53400AAAA0D /* Debug */,
@@ -558,6 +573,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FFC0CD1B2DC75A64009E9E83 /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 24.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FFC0CD1C2DC75AC4009E9E83 /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FFC0CD1B2DC75A64009E9E83 /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FF649CAF2DC1F53200AAAA0D /* Project object */;
 }

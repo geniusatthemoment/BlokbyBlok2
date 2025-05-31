@@ -28,25 +28,6 @@ enum AnyCodeBlock: Identifiable, Codable, Transferable, Equatable {
             case .arrayBlock(let b): return b.codeStr
             }
         }
-        set {
-            switch self {
-            case .variable(var b):
-                b.codeStr = newValue
-                self = .variable(b)
-            case .ifBlock(var b):
-                b.codeStr = newValue
-                self = .ifBlock(b)
-            case .printBlock(var b):
-                b.codeStr = newValue
-                self = .printBlock(b)
-            case .equationBlock(var b):
-                b.codeStr = newValue
-                self = .equationBlock(b)
-            case .arrayBlock(var b):
-                b.codeStr = newValue
-                self = .arrayBlock(b)
-            }
-        }
     }
     
     static var transferRepresentation: some TransferRepresentation {

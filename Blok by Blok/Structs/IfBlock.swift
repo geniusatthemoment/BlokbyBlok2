@@ -11,8 +11,6 @@ struct IfBlock: CodeBlockProtocol {
             let nestedCode = nestedBlocks.map { $0.codeStr }.joined(separator: "\n    ")
             return "if \(condition) {\n    \(nestedCode)\n}"
         }
-        set {
-        }
     }
 
     static var transferRepresentation: some TransferRepresentation {

@@ -117,6 +117,12 @@ class Interpreter {
                     conditionTokens.append(next()!)
                 }
                 _ = next()
+
+                if !checkIfCondition(conditionTokens) {
+                    error("Incorrect if statement", index)
+                    return
+                }
+
                 var blockTokens: [String] = []
                 var braceCount = 1
                 while braceCount > 0, let tok = next() {
@@ -142,6 +148,10 @@ class Interpreter {
             } else if token == ";" {
                 continue
             } else {
+                if token.hasPrefix("\"") && token.hasSuffix("\"") {
+                    error("String literal outside print is not allowed", index)
+                    return
+                }
                 if peek() == ";" {
                     variables[token] = 0
                     _ = next()
@@ -151,6 +161,27 @@ class Interpreter {
                 }
             }
         }
+    }
+
+    private func checkIfCondition(_ tokens: [String]) -> Bool {
+        let allowedOperators: Set<String> = ["==", "!=", "<", ">", "<=", ">=", "+", "-", "*", "/", "%", "(", ")"]
+
+        for token in tokens {
+            if token.hasPrefix("\"") && token.hasSuffix("\"") {
+                return false
+            }
+            if Int(token) != nil {
+                continue
+            }
+            if variables[token] != nil {
+                continue
+            }
+            if allowedOperators.contains(token) {
+                continue
+            }
+            return false
+        }
+        return true
     }
 
     private func assign(name: String, exprTokens: [String]) {

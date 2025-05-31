@@ -7,15 +7,6 @@ struct VariableBlock: CodeBlockProtocol {
 
     var codeStr: String {
         get { "\(text);" }
-        set {
-//            let parts = newValue.split(separator: "/")
-//            if parts.count == 2 {
-//                self.text = String(parts[1])
-//            } else {
-//                print("Warning: Invalid codeStr format '\(newValue)' for VariableBlock")
-//                self.text = ""
-//            }
-        }
     }
 
     static var transferRepresentation: some TransferRepresentation {

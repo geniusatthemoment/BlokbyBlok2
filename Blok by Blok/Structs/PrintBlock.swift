@@ -6,7 +6,6 @@ struct PrintBlock: CodeBlockProtocol {
     var text: String
     var codeStr: String{
         get { return "print (\(text));" }
-        set{}
     }
     static var transferRepresentation: some TransferRepresentation {
             CodableRepresentation(contentType: .codeBlock)

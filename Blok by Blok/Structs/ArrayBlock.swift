@@ -14,8 +14,6 @@ struct ArrayBlock: CodeBlockProtocol {
                 .joined(separator: ", ")
             return "\(name) = [\(cleaned)];"
         }
-        set {
-        }
     }
 
     static var transferRepresentation: some TransferRepresentation {

@@ -11,9 +11,6 @@ struct EquationBlock: CodeBlockProtocol {
         get {
             return "\(text) = \(assignedValue);"
         }
-        set {
-
-        }
     }
 
     static var transferRepresentation: some TransferRepresentation {
